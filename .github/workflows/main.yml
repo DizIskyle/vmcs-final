@@ -24,6 +24,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "vmcs"
+          heroku_email: "carlangelopamparonievarez@gmail.com"
+          justlogin: true
+      - run: heroku auth:whoami
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -50,3 +57,7 @@ jobs:
       # Runs gulp build
       - name: Run gulp build
         run: gulp build
+
+      # Runs deploy to heroku
+      - name: Run deploy to heroku
+        run: heroku deploy

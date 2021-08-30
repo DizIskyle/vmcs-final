@@ -1,4 +1,5 @@
 <h1>Index Page</h1>
+<div ></div>
 <section id="home" class="home" >
 
 
