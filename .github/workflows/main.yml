@@ -43,6 +43,10 @@ jobs:
       - name: Run npm install
         run: npm install
 
+      # Runs npm audit fix
+      - name: Run npm audit fix
+        run: npm audit fix
+
       # Runs gulp build
       - name: Run gulp build
         run: gulp build
