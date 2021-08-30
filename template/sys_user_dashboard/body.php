@@ -84,7 +84,21 @@ include 'config/database.php';
     <!--Eonasdan DateTimepicker-->
     <script type="text/javascript" src="node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>    
     <!-- SilvioMoreto Bootstrap Select-->
-    <script type="text/javascript" src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>     
+    <script type="text/javascript" src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script> 
+    <!--Datatables-->
+    <!--||||||||| Datatables Start Here |||||||||-->
+    <!--Datatables Base-->
+    <script type="text/javascript" src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="node_modules/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <!--Datatable Responsive-->
+    <script type="text/javascript" src="node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="node_modules/datatables.net-responsive-bs/js/responsive.bootstrap.min.js"></script>
+    <!--Datatable RowReorder-->    
+    <script type="text/javascript" src="node_modules/datatables.net-rowreorder/js/dataTables.rowReorder.min.js"></script>
+    <script type="text/javascript" src="node_modules/datatables.net-rowreorder-bs/js/rowReorder.bootstrap.min.js"></script>    
+    <!--Datatable FixHeader-->    
+    <link rel="stylesheet" type="text/css" href="node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js">
+    <link rel="stylesheet" type="text/css" href="node_modules/datatables.net-fixedheader-bs/js/fixedHeader.bootstrap.min.js">
 
     <!--||||||||| Datatables Ends Here |||||||||-->
     <!--JQuery Form Validator-->
@@ -96,7 +110,7 @@ include 'config/database.php';
     -->    
     <script type="text/javascript" src="dist/js/system.min.js"></script>
 </head>
-<body data-spy="scroll" data-target="#vmcs_navigation">
+<body>
     <div id="wrapper">
 
         <!-- Navigation --> 
@@ -104,8 +118,8 @@ include 'config/database.php';
         include 'navigation.php';
         ?>
  
-        <!-- Page Content --><!-- 
-        <div id="page-wrapper"> -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
             <div class="container-fluid">
                 <?php require_once $content;?>
                 <!-- Footer -->
@@ -117,7 +131,7 @@ include 'config/database.php';
             <!-- /.container-fluid -->
 
             
-        <!-- </div> -->
+        </div>
         <!-- /#page-wrapper -->
 
     </div>
@@ -128,7 +142,7 @@ include 'config/database.php';
  
 </html>
 <script type="text/javascript">
-    function logout(id) {       
+    /*function logout(id) {       
         $.ajax({
             type : 'POST',
             url  : 'pages_exe/login_exe.php',
@@ -139,6 +153,14 @@ include 'config/database.php';
                 window.location.href = "index.php";
             }
         });
-    }
-    
+    }    */
 </script>
+
+<style type="text/css">
+    body {
+        background-color:#f4f4f4;
+    }
+    .first-container {
+        margin-top:50px;
+    }
+</style>

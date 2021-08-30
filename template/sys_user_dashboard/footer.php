@@ -1,0 +1,2 @@
+<hr>
+<p><small><?php echo getenv('SYS_COMPANY') ?> &copy; 2021</small> | <span class="fa fa-compass"></span> by Carl <br><small><?php echo getenv('SYS_NAME') ?> v<?php echo getenv('SYS_VERSION') ?></small></p>

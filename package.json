@@ -1,7 +1,7 @@
 {
-  "name": "seclogbooks",
+  "name": "vcms",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project latibule is a place of imposition and dieline PDF as well as related documents.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,7 @@
   "dependencies": {
     "bootstrap": "^3.4.1",
     "bootstrap-select": "^1.13.16",
+    "darkmode-js": "^1.5.7",
     "datatables.net-autofill-bs": "^2.0.0",
     "datatables.net-bs": "^1.10.20",
     "datatables.net-buttons-bs": "^1.6.1",
@@ -27,14 +28,21 @@
     "dotenv": "^8.2.0",
     "eonasdan-bootstrap-datetimepicker": "^4.17.47",
     "font-awesome": "^4.7.0",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.5.1",
     "jquery-validation": "^1.19.1",
     "jszip": "^3.7.1",
+    "jump.js": "^1.0.2",
+    "lightgallery": "^2.2.0",
     "mathjs": "^9.4.3",
     "metismenu": "^3.0.6",
     "moment": "^2.25.3",
+    "packery": "^2.1.2",
     "pdfjs-dist": "^2.6.347",
-    "pdfmake": "^0.1.65"
+    "pdfmake": "^0.1.65",
+    "scrollreveal": "^4.0.9",
+    "sweetalert2": "^11.1.4",
+    "swiper": "^7.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -79,5 +87,13 @@
     "opera >= 23",
     "ios >= 7",
     "android >= 4"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aice09/VCMS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aice09/VCMS/issues"
+  },
+  "homepage": "https://github.com/aice09/VCMS#readme"
 }

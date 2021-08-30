@@ -15,9 +15,7 @@ Project latibule is a place of imposition and dieline PDF as well as related doc
      npm audit fix
      ```
 
-2. Create **fileshere** folder inside your master folder
-
-3. Run Gulp to get compile Javascript, Sass, images, and dump files.
+2. Run Gulp to get compile Javascript, Sass, images, and dump files.
 
    - Build to compile all stuffs
 
@@ -42,4 +40,9 @@ Project latibule is a place of imposition and dieline PDF as well as related doc
      gulp clean
      ```
 
-4. For more info please contact me, find the following contact information inside html files of each pages.
+3. For more info please contact me, find the following contact information inside html files of each pages.
+
+## System Deployment
+
+1. This system are hosted to online VCS (version control system) like Github, Gitlab, Bitbucket, etc.
+2. Create account in Netlify
