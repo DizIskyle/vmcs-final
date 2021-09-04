@@ -1,11 +1,11 @@
-<h1>Index Page</h1>
+<h1> RAGAY PET WELLNESS CENTER </h1>
 <div ></div>
 <section id="home" class="home" >
 
 
     <div class="jumbotron">
         <div class="container-fluid">
-            <h1>Hello, world!</h1>
+            <h2>TRUSTED VETERINARY CLINIC!</h2>
             <p>Contents ...</p>
             <p>
                 <a class="btn btn-primary btn-lg">Learn more</a>
