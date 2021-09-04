@@ -18,10 +18,10 @@
             <li><a href="#review">Review</a></li>            
             <li><a href="#contact">Contact</a></li>
             <li><a href="#">Register</a></li>
-            <?php if (isset($_SESSION['mists_employee_logged_in'])==false) { ?>
-                <li><a href="index.php">Login</a></li>
+            <?php if (isset($_SESSION['system_logged_in'])==false) { ?>
+                <li><a href="login.php">Login</a></li>
             <?php } else { ?>
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="dist/img/fixtures/default_employee_img.jpg" style="width: 30px" class="profile-image img-circle">   <?php echo $_SESSION['mists_userlastname'] ?>  <b class="caret"></b></a>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="dist/img/fixtures/default_employee_img.jpg" style="width: 30px" class="profile-image img-circle">   <?php echo $_SESSION['system_userlastname'] ?>  <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="index.php?page=docs">Documentation</a></li>
                         <li role="separator" class="divider"></li>
