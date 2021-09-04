@@ -1,2 +1,2 @@
 <hr>
-<p><small><?php echo getenv('SYS_COMPANY') ?> &copy; 2021</small> | <span class="fa fa-compass"></span> by Patrick <br><small><?php echo getenv('SYS_NAME') ?> v<?php echo getenv('SYS_VERSION') ?></small></p>
+<p><small><?php echo getenv('SYS_COMPANY') ?> &copy; 2021</small> | <span class="fa fa-compass"></span> by Group 1 <br><small><?php echo getenv('SYS_NAME') ?> v<?php echo getenv('SYS_VERSION') ?></small></p>

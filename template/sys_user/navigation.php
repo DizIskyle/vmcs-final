@@ -6,7 +6,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><?php echo getenv('SYS_NAME') ?></a>
+        <a class="navbar-brand" href="index.php">
+            <img alt="Brand" src="src/img/fixtures/company_logo/company_logo.png">
+        </a>
     </div> 
     <!-- /.navbar-header -->
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,7 +19,7 @@
             <li><a href="#services">Services</a></li>            
             <li><a href="#review">Review</a></li>            
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="index.php?page=register">Register</a></li>
             <?php if (isset($_SESSION['system_logged_in'])==false) { ?>
                 <li><a href="login.php">Login</a></li>
             <?php } else { ?>
