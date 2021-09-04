@@ -20,8 +20,11 @@ for ($i=0; $i<$salt_len ; $i++) {
 $bcrypt_salt=$blowfish_pre.$salt.$blowfish_end;
 $hash_password=crypt($password,$bcrypt_salt);
 
-echo $salt;
-echo $hash_password;
+echo 'Password:'.$password;
+echo '<br>';
+echo 'Salt:'.$salt;
+echo '<br>';
+echo 'Hash Password:'.$hash_password;
 echo "<br>";
 //Verification
 $hash_pass=crypt($password,$blowfish_pre.$salt.$blowfish_end);
