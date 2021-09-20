@@ -101,7 +101,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <a href="index.php?=forgotpass" class="forgots">Forgot your password?</a><br>
                         <a href="index.php?=forgotid" class="forgots">Forgot your user ID?</a><br>
-                        <a href="index.php?=register" class="forgots"><b><u>Not Yet Enrolled? Enroll Now!</u></b></a>
+                        <a href="index.php?=register" class="forgots"><b><u>CREATE ACCOUNT</u></b></a>
                     </div> 
                 </form>
         </div>
@@ -128,7 +128,7 @@
 <style type="text/css"> 
     body {
         background: #F8F7F4;
-        background: url('src/img/fixtures/login_background/login_img1.jpg') no-repeat center center fixed;
+        background: url('src/img/fixtures/login_background/login_img7.png') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

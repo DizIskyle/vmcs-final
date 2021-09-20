@@ -46,3 +46,34 @@
     color: #445115;
   }
   
+  /* Green Yellow  #154451 */
+  .panel-yellow {
+    border-color: yellow;
+  }
+  .panel-yellow > .panel-heading {
+    border-color: yellow;
+    color: white;
+    background-color: yellow;
+  }
+  .panel-yellow > a {
+    color: yellow;
+  }
+  .panel-yellow > a:hover {
+    color: yellow;
+  }
+
+   /* Green Yellow  #154451 */
+   .panel-group1green {
+    border-color: #87bc38;
+  }
+  .panel-group1green > .panel-heading {
+    border-color: #87bc38;
+    color: white;
+    background-color: #87bc38;
+  }
+  .panel-group1green > a {
+    color: #87bc38;
+  }
+  .panel-group1green > a:hover {
+    color: #87bc38;
+  }

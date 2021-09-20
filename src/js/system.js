@@ -14,4 +14,5 @@
     * Licensed under MIT (https://raw.githubusercontent.com/Kou-Fu-Color-Printing-Corporation/PDFViewerStatic/master/LICENSE?token=AD2UKLYVBQHZJOVXLILL26LAK5G4A)
 */
 let mists = "Hello from Carl Angelo Nievarez";
-let whoami = "Your Ace";
+let whoami = "group 1";
+

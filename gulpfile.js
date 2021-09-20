@@ -77,6 +77,9 @@ var paths = {
 		imgs: 'dist/img',
 		dbdumps: 'dist/dumps',
 	},
+	extra: {
+		css: 'src/css',
+	},
 };
 
 ///////////////////////////////////////////////////////////
@@ -166,9 +169,15 @@ gulp.task('dbdumps', () => {
 /* clean dist
    use to delete your entire dist folder
 */
-gulp.task('clean', function() {
-	return gulp.src(paths.dist.root).pipe(clean());
+gulp.task('cleandist', function() {
+	return gulp.src(paths.dist.root).pipe(clean());	
 });
+
+gulp.task('cleancss', function() {
+	return gulp.src(paths.extra.css).pipe(clean());
+});
+
+gulp.task('clean', gulp.series('cleandist', 'cleancss'));
 
 // Prepare all assets for production
 gulp.task('build', gulp.series('sass', 'css', 'js', 'img', 'dbdumps'));

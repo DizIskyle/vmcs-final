@@ -1,14 +1,14 @@
 <!--
-    Project Title: PDF Viewer
-    Code Name: Litost
+    Project Title:
+    Code Name: 
     Code Color: 
     Code Hex: 
     Description:
     Start:
-    Developer: Carl Angelo Nievarez
-        > Github: https://github.com/aice09
-        > Email: carlangelopamparonievarez@gmail.com
-        > FB: https://facebook.com/aice0927
+    Developer: 
+        > Github: https://github.com/bepat14
+        > Email: 
+        > FB:
 -->
 <?php
 
@@ -142,3 +142,6 @@ include 'config/database.php';
     }
     
 </script>
+<style>
+    
+</style>
