@@ -317,7 +317,7 @@ figure img{width:300px;}
 <section id="about" class="about" style="height:850px; background-color:green;"></section>
 
 <!--section id="services" class="services" style="height:850px; background-color:blue;"></section-->
-<!-- <section id="review" class="review" style="height:850px; background-color:violet;">  -->
+<section id="review" class="review" style="height:850px; background-color:violet;">
 <br><br><br>
 UNCODITIONAL LOVE FUND
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risusDonec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus</p>
