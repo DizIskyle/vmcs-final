@@ -1,258 +1,242 @@
-<h1>Services Page</h1>
+<h1>  </h1> <br>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
 
-<bs3-text>DEWORMING</bs3-text>
-<br>
-<br>
-<bs3-text>GROOMING</bs3-text>
-<br>
-<br>
-<bs3-text>ANTIRABIES VACCINATION</bs3-text>
-<br>
-<br>
-<bs3-text>5 IN 1 VACCINATION</bs3-text>
-
-<!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>CSS paper fold with hover effect</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
-</head>
-
-<body>
-<div class="container">
+    <h1 class="text-center"><b>OUR SERVICES</b></h1>
+	<div class= "container mission">
+<p> At Ragay Pet Wellness Center we want yout pet to live a healthy, happy life!<br>
+	Our focus is on Preventative Wellness; after all, prevention is the very best medicine!<br>
+	We know that sometimes in order to stay well, first you have to get well, that's why we are also able to
+	treat your pet if they are feeling a bit under the weather. </p>
+</div><br><br><br>
+	<div class="container">
 	<div class="row">
-	<ul>
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab  item">
-			<div class="folded-corner service_tab_1">
-				<div class="text">
-					<i class="fa fa-image fa-5x fa-icon-image"></i>
-						<p class="item-title">
-								<h3> Designing</h3>
-							</p><!-- /.item-title -->
-					<p>
-						This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, 
-					</p>
-				</div>
-			</div>
-	    </div>
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
-			<div class="folded-corner service_tab_1">
-				<div class="text">
-					<i class="fa fa-lightbulb-o fa-5x fa-icon-image" ></i>
-						<p class="item-title">
-							<h3> Developing</h3>
-						</p><!-- /.item-title -->
-						<p>
-							This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, 
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
-			<div class="folded-corner service_tab_1">
-				<div class="text">
-					<i class="fa fa-truck fa-5x fa-icon-image"></i>
-						<p class="item-title">
-							<h3> Marketing</h3>
-						</p><!-- /.item-title -->
-					<p>
-						This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, 
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
-			<div class="folded-corner service_tab_1">
-				<div class="text">
-					<i class="fa fa-diamond fa-5x fa-icon-image"></i>
-						<p class="item-title">
-							<h3> Branding</h3>
-						</p><!-- /.item-title -->
-					<p>
-						This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, 
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
-			<div class="folded-corner service_tab_1">
-			<div class="text">
-				<i class="fa fa-line-chart fa-5x fa-icon-image"></i>
-					<p class="item-title">
-						<h3>Analytics</h3>
-					</p><!-- /.item-title -->
-					<p>
-						This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, 
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
-			<div class="folded-corner service_tab_1">
-				<div class="text">
-					<i class="fa fa-mobile fa-5x fa-icon-image"></i>
-						<p class="item-title">
-							<h3>Mobil Apps</h3>
-						</p><!-- /.item-title -->
-					<p>
-						This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, 
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
-				<div class="folded-corner service_tab_1">
-					<div class="text">
-						<i class="fa fa-money fa-5x fa-icon-image"></i>
-							<p class="item-title">
-								<h3> e-commerce</h3>
-							</p><!-- /.item-title -->
-						<p>
-							This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, 
-						</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
-			<div class="folded-corner service_tab_1">
-				<div class="text">
-					<i class="fa fa-bullhorn fa-5x fa-icon-image"></i>
-						<p class="item-title">
-							<h3> Support</h3>
-						</p><!-- /.item-title -->
-					<p>
-						This is an amazing set of animated accordions based completely on CSS. They come oriented both vertically and horizontally in order to fit properly in your project. In order to see the slides, 
-					</p>
-				</div>
-			</div>
-		</div>
-	   </ul>
+	
+	<!--team-1-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639234890514.JPG" class="img-fluid" />
+	<h3>Grooming Services</h3>
 	</div>
-</div>
-
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	<div class="team-back">
+	<span>
+	Complete grooming<br>
+	-bath<br>
+	-haircut<br>
+	-nail trim<br>
+	-ear cleaning<br>
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-1-->
+	
+	<!--team-2-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639236610653.PNG" class="img-fluid" />
+	<h3>Deworming</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+		Deworming is depends on your pet weight
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-2-->
+	
+	<!--team-3-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639234890527.JPEG" class="img-fluid" />
+	<h3>Vaccinations</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+	Tailored to meet your pets specific needs based on their environment and social life. Not every pet has the same vaccination needs. 
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-3-->
+	
+	<!--team-4-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639237075925.PNG" class="img-fluid" />
+	<h3>Theraphy Laser</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+		Our Theraphy laser can provide pain relief and wound care for your pet.
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-4-->
+	
+	<!--team-5-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639234890502.JPG" class="img-fluid" />
+	<h3>Advanced Diagnostic</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+		If your pet needs ongoing care such as  periodic bloodwork or blood pressure monitoring, will work with you to create a schedule that suit you and your pet.
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-5-->
+	
+	<!--team-6-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639236610629.PNG" class="img-fluid" />
+	<h3>Dental Cleaning</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+	Tooth decay in your pet can cause numerous problems, including rotten teeth infection and heart disease. Regular dental
+	visits are recommended to control damage to the teeth and gums  and prevent halitosis.
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-6-->
+	
+	
+	
+	</div>
+	</div>
 
 <style>
-body {
- background:#000000 !important;
+body
+{
+	background:#00bcd4;
 }
 
-/*
-
-*/
-
-h3 {
-  color: rgba(31,181,172,.9);
-}
-.text{
-	color: rgba(31,181,172,.9);
-	text-align: center;
+h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
 }
 
-
-.folded-corner:hover .text{
-	visibility: visible;
-	color: #000000;;
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
 }
-.Services-tab{
-	margin-top:20px;
+
+
+.our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 100px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+	font-size: 18px;
 	
-
 }
 
-/*
-  nav link items
-*/
-.folded-corner{
-  padding: 25px 25px;
-  position: relative;
-  font-size: 90%;
-  text-decoration: none;
-  color: #999; 
-  background: transparent;
-  transition: all ease .5s;
-  border: 1px solid rgba(31,181,172,.9);
-}
-.folded-corner:hover{
-	background-color: rgba(31,181,172,.9);
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
 }
 
-/*
-  paper fold corner
-*/
-
-.folded-corner:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-style: solid;
-  border-width: 0 0px 0px 0;
-  border-color: #ddd #000;
-  transition: all ease .3s;
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
 }
 
-/*
-  on li hover make paper fold larger
-*/
-.folded-corner:hover:before {
-	background-color: #D00003;
-  border-width: 0 50px 50px 0;
-  border-color: #eee #000;
-  
-}
-
-.service_tab_1{
-	background-color: #000;
-}
-.service_tab_1:hover .fa-icon-image{
-    color: #000;
-    transform: rotate(360deg) scale(1.5);
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
 }
 
 
-.fa-icon-image{
-	color: rgba(31,181,172,.9);
-	display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    font-size-adjust: none;
-    font-stretch: normal;
-    -moz-font-feature-settings: normal;
-    -moz-font-language-override: normal;
-    text-rendering: auto;
-    transition: all .65s linear 0s;
-    text-align: center;
-    transition: all 1s cubic-bezier(.99,.82,.11,1.41);
-}
+.mission{
+ background-color: transparent;
+ border: 4px  solid white;
+ width: 100%;
+ }
 
+.mission p{
+    text-align:center;
+    color: white;
+    font: arial;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
 </style>

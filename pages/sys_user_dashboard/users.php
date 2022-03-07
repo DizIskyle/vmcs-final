@@ -11,34 +11,35 @@
 <table class="table table-bordered responsive nowrap" id="example" width="100%">
 	<thead> 
 		<tr>
-			<th width="3%">No</th>
-			<th width="30%">Username</th>
-			<th width="15%">Salt</th>
-			<th width="6%">Password</th>
-			<th width="6%">First name</th>
-			<th width="15%">Middle name</th>
-			<th width="6%">last Name</th>
-			<th width="6%">email</th>
-			<th width="6%">category</th>
-			<th width="6%">Status</th>
+			<th width="5%">No</th>
+			<th width="5%">Username</th>
+			<th width="5%">Salt</th>
+			<th width="5%">Password</th>
+			<th width="5%">First name</th>
+			<th width="5%">Middle name</th>
+			<th width="5%">last Name</th>
+			<th width="5%">email</th>
+			<th width="5%">category</th>
+			<th width="5%">Status</th>
 			<th></th>
 		</tr>
 	</thead>
-	<tfoot>
-    <tr>
-			<th width="3%">No</th>
-			<th width="30%">Username</th>
-			<th width="15%">Salt</th>
-			<th width="6%">Password</th>
-			<th width="6%">First name</th>
-			<th width="15%">Middle name</th>
-			<th width="6%">last Name</th>
-			<th width="6%">email</th>
-			<th width="6%">category</th>
-			<th width="6%">Status</th>
+    <tfoot> 
+		<tr>
+			<th width="5%">No</th>
+			<th width="5%">Username</th>
+			<th width="5%">Salt</th>
+			<th width="5%">Password</th>
+			<th width="5%">First name</th>
+			<th width="5%">Middle name</th>
+			<th width="5%">last Name</th>
+			<th width="5%">email</th>
+			<th width="5%">category</th>
+			<th width="5%">Status</th>
 			<th></th>
 		</tr>
 	</tfoot>
+	
 </table>
 
 <div class="modal fade" id="modal-id">
@@ -102,7 +103,6 @@
 								<label for="">Category</label>
 								<select name="usercategory" id="usercategory" class="form-control">
 									<option value="1">Admin</option>
-									<option value="2">Veterinarian</option>
 									<option value="3">Customers</option>
 								</select>
 							</div>
@@ -143,7 +143,7 @@ $(document).ready(function() {
         "processing": true,
         "serverSide": true,
         "ajax": {
-            url: "pages_exe/sys_user_dashboard/users_exe_dt.php",
+            url: "pages_exe/sys_admin/users_exe_dt.php",
             type: "POST"
         }
     });
@@ -179,7 +179,7 @@ $(document).ready(function() {
         rules: {
             username: {
                 required: true,
-                minlength:8
+                minlength: 5
             },
             userfirstname: {
                 required: true
@@ -196,11 +196,11 @@ $(document).ready(function() {
             },
             userpass: {
                 required: true,
-                minlength: 8
+                minlength: 6
             },
             confirm_userpass: {
                 required: true,
-                minlength: 8,
+                minlength: 6,
                 equalTo: "#userpass"
             },
 			usercategory: {
@@ -225,7 +225,7 @@ $(document).ready(function() {
         var data = $("#section-form").serialize();
         $.ajax({
             type: 'POST',
-            url: 'pages_exe/sys_user_dashboard/users_exe_crud.php',
+            url: 'pages_exe/sys_admin/users_exe_crud.php',
             data: data,
             success: function(data, status) {
                 //console.log(data);
@@ -251,7 +251,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: 'POST',
-            url: 'pages_exe/sys_user_dashboard/users_exe_crud.php',
+            url: 'pages_exe/sys_admin/users_exe_crud.php',
             data: {
                 read_selected: action,
                 crud_id: id
@@ -288,7 +288,7 @@ $(document).ready(function() {
             var action = "delete";
             $.ajax({
                 type: 'POST',
-                url: 'pages_exe/sys_user_dashboard/users_exe_crud.php',
+                url: 'pages_exe/sys_admin/users_exe_crud.php',
                 data: {
                     delete_selected: action,
                     crud_id: id,

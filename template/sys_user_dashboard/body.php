@@ -1,15 +1,3 @@
-<!--
-    Project Title: PDF Viewer
-    Code Name: Litost
-    Code Color: 
-    Code Hex: 
-    Description:
-    Start:
-    Developer: Carl Angelo Nievarez
-        > Github: https://github.com/aice09
-        > Email: carlangelopamparonievarez@gmail.com
-        > FB: https://facebook.com/aice0927
--->
 <?php
 
 include 'config/database.php';
@@ -24,7 +12,7 @@ include 'config/database.php';
     <title><?php echo getenv('SYS_NAME') ?> v<?php echo getenv('SYS_VERSION') ?> | <?php echo $title; ?></title> 
     <meta name="description" content="">
     <meta name="keywords" content=""> 
-    <meta name="author" content="Carl Angelo Nievarez"> 
+    <meta name="author" content=""> 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="72x72" href="dist/img/favicon/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="dist/img/favicon/apple-icon-76x76.png">
@@ -142,7 +130,7 @@ include 'config/database.php';
  
 </html>
 <script type="text/javascript">
-    /*function logout(id) {       
+    function logout(id) {       
         $.ajax({
             type : 'POST',
             url  : 'pages_exe/login_exe.php',
@@ -153,7 +141,7 @@ include 'config/database.php';
                 window.location.href = "index.php";
             }
         });
-    }    */
+    }   
 </script>
 
 <style type="text/css">

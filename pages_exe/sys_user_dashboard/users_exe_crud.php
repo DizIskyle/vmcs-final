@@ -95,7 +95,7 @@ if (isset($_POST['update_btn'])) {
     $useremail = $_POST["useremail"];
     $userstatus = $_POST["userstatus"];
     $usercategory = $_POST["usercategory"];
-
+    
 
 	$query = "  UPDATE users 
                 SET username = '$username',

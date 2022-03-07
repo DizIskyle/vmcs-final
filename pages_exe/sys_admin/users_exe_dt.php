@@ -1,25 +1,24 @@
 <?php
-include '../environment.php';
-include '../config/database.php';
+include '../../environment.php';
+include '../../config/database.php';
 
 $request=$_REQUEST;
 $col =array(
-    0   =>  'machid',
-    1   =>  'machine',
-    2   =>  'color',
-    3   =>  'widthinch',
-    4   =>  'widthmm',
-    5   =>  'cylindertype',
-    6   =>  'spec',
-    7   =>  'qty',
-    8   =>  'plate',
-    9   =>  'dstape',
-    10   =>  'distortion'
+    0   =>  'userid',
+    1   =>  'username',
+    2   =>  'usersalt',
+    3   =>  'userpass',
+    4   =>  'userfirstname',
+    5   =>  'usermiddlename',
+    6   =>  'userlastname',
+    7   =>  'useremail',
+    8   =>  'usercategory',
+    9   =>  'userstatus'
 );  //create column like table in database
 
-$sql =" SELECT * FROM mach_flexocylinder
+$sql =" SELECT * FROM users
         /*WHERE qty != 'disable'*/
-        ORDER BY machine ASC;";
+        ORDER BY userid DESC;";
 $query=mysqli_query($db,$sql);
 
 $totalData=mysqli_num_rows($query);
@@ -27,22 +26,21 @@ $totalData=mysqli_num_rows($query);
 $totalFilter=$totalData;
 
 //Search
-$sql =" SELECT * FROM mach_flexocylinder
+$sql =" SELECT * FROM users
         /*WHERE qty != 'disable'*/
         WHERE 1=1
         ";
 
 if(!empty($request['search']['value'])){
-    $sql.=" AND (machine Like '%".$request['search']['value']."%' ";
-    $sql.=" OR color Like '%".$request['search']['value']."%' ";
-    $sql.=" OR widthinch Like '%".$request['search']['value']."%' ";
-    $sql.=" OR widthmm Like '%".$request['search']['value']."%'";
-    $sql.=" OR cylindertype Like '%".$request['search']['value']."%' ";
-    $sql.=" OR spec Like '%".$request['search']['value']."%' ";
-    $sql.=" OR plate Like '%".$request['search']['value']."%' ";
-    $sql.=" OR qty Like '%".$request['search']['value']."%' ";
-    $sql.=" OR dstape Like '%".$request['search']['value']."%' ";
-    $sql.=" OR distortion Like '%".$request['search']['value']."%' )";
+    $sql.=" AND (username Like '%".$request['search']['value']."%' ";
+    $sql.=" OR usersalt Like '%".$request['search']['value']."%' ";
+    $sql.=" OR userpass Like '%".$request['search']['value']."%' ";
+    $sql.=" OR userfirstname Like '%".$request['search']['value']."%'";
+    $sql.=" OR usermiddlename Like '%".$request['search']['value']."%' ";
+    $sql.=" OR userlastname Like '%".$request['search']['value']."%' ";
+    $sql.=" OR useremail Like '%".$request['search']['value']."%' ";
+    $sql.=" OR usercategory Like '%".$request['search']['value']."%' ";
+    $sql.=" OR userstatus Like '%".$request['search']['value']."%' )";
 }
 $query=mysqli_query($db,$sql);
 $totalData=mysqli_num_rows($query);
@@ -68,7 +66,6 @@ while($row=mysqli_fetch_array($query)){
     $subdata[]=$row[7];
     $subdata[]=$row[8];
     $subdata[]=$row[9];
-    $subdata[]=$row[10];
     $subdata[]='<button type="button" class="btn btn-primary btn-sm" id="update" data-id="'.$row[0].'" >Edit</button>
                 <button type="button" class="btn btn-danger btn-sm" id="delete" data-id="'.$row[0].'" >Delete</button>';
     $data[]=$subdata;

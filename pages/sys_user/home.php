@@ -1,337 +1,697 @@
-<!--<h1> RAGAY PET WELLNESS CENTER </h1>
-<div ></div>-->
+<br>
 <section id="home" class="home">
-
-<br><br><br>
-    <div class="jumbotron">
-        <div class="container-fluid">
-            <h2>GET TO KNOW US!</h2>
-            <p class="home-subheader" ><b> We welcome new patients to Ragay Pet Wellness Center every day!</b> 
-        <br>Your pet - Our new FRIENDS - will receive the same</br>excellent service and personal care!
-            </p>
-            <p>
-                <a class="btn btn-primary btn-lg">Learn more</a>
-            </p>
-        </div>
-    </div>
-    <!-- Create 5 sections -->
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
- 	  
-    <div class="container cta-100 ">
-        <div class="container">
-          <div class="row blog">
-            <div class="col-md-12">
-              <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#blogCarousel" data-slide-to="1"></li>
-                </ol>
-                  <!--.item-->
-                  <div class="carousel-item ">
-                    <div class="row">
-                      <div class="col-md-4" >
-                        <div class="item-box-blog">
-                          <div class="item-box-blog-image">
-                            <!--Date-->
-                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
-                            <!--Image-->
-                            <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
-                          </div>
-                          <div class="item-box-blog-body">
-                            <!--Heading-->
-                            <div class="item-box-blog-heading">
-                              <a href="#" tabindex="0">
-                                <h5>News Title</h5>
-                              </a>
-                            </div>
-                            <!--Data-->
-                            <div class="item-box-blog-data" style="padding: px 15px;">
-                              <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
-                            </div>
-                            <!--Text-->
-                            <div class="item-box-blog-text">
-                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
-                            </div>
-                            <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
-                            <!--Read More Button-->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4" >
-                        <div class="item-box-blog">
-                          <div class="item-box-blog-image">
-                            <!--Date-->
-                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
-                            <!--Image-->
-                            <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
-                          </div>
-                          <div class="item-box-blog-body">
-                            <!--Heading-->
-                            <div class="item-box-blog-heading">
-                              <a href="#" tabindex="0">
-                                <h5>News Title</h5>
-                              </a>
-                            </div>
-                            <!--Data-->
-                            <div class="item-box-blog-data" style="padding: px 15px;">
-                              <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
-                            </div>
-                            <!--Text-->
-                            <div class="item-box-blog-text">
-                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
-                            </div>
-                            <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
-                            <!--Read More Button-->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4" >
-                        <div class="item-box-blog">
-                          <div class="item-box-blog-image">
-                            <!--Date-->
-                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
-                            <!--Image-->
-                            <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
-                          </div>
-                          <div class="item-box-blog-body">
-                            <!--Heading-->
-                            <div class="item-box-blog-heading">
-                              <a href="#" tabindex="0">
-                                <h5>News Title</h5>
-                              </a>
-                            </div>
-                            <!--Data-->
-                            <div class="item-box-blog-data" style="padding: px 15px;">
-                              <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
-                            </div>
-                            <!--Text-->
-                            <div class="item-box-blog-text">
-                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
-                            </div>
-                             <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
-                            <!--Read More Button-->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--.row-->
-                  </div>
-                  <!--.item-->
-                </div>
-                <!--.carousel-inner-->
-              </div>
-              <!--.Carousel-->
-            </div>
-          </div>
-        </div>
+  
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>WELCOME TO OUR CLINIC</h1>        
+            <h3>this is special kind of veterinary hospital</h3>
+        </hgroup>
+        <a class="btn btn-success btn-lg" role="button" href="login.php">Request an Appointment</a>
       </div>
-   
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Pets are treated like a family</h1>
+            <h3>belief in treating your pet like our own</h3>      
+        </hgroup>       
+        <a class="btn btn-success btn-lg" role="button" href="login.php">Request an Appointment</a>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>UPGRADING OUR CLINIC</h1>       
+            <h3>to serve better for all of you</h3>
+        </hgroup>
+        <a class="btn btn-success btn-lg" role="button" href="login.php">Request an Appointment</a>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<style>
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 2px;
+    background-color: white;
+    border-color: white;
+    opacity: .3;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 3;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+
+}
+.hero h1 {
+    font-size: 3em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
 
 
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn-success .btn-lg {padding: 10px 40px;}
+.btn-lg,
+.btn.btn-success:hover,
+.btn.btn-success:focus {
+    color: #f5f5f5;
+    background: #a00000;
+    border-color: #a00000;
+    outline: none;
+    margin: 20px auto;
+    
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(src/img/fixtures/login_background/1637244747076.jpeg); filter: blur(3px); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(src/img/fixtures/login_background/1637243852407.JPEG); filter: blur(4px);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(src/img/fixtures/login_background/1111.JPEG);
+  filter: blur(4px);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 1000px){
+    .hero { width: 1000px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 2em; }   
+    }
+section{
+	padding: 60px 0;
+}
+</style>
+
+<!--section id="what-we-do">
+		<div class="container-fluid">
+			<h2 class="section-title mb-2 h1">What we do</h2>
+			<p class="text-center text-muted h5"><b>Keeping your pet healthy is important to us</b></p>
+			<div class="row mt-5">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div class="card">
+						<div class="card-block">
+							<h3 class="card-title">GROOMING</h3>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+							<a  title="Read more" class="read-more" href="index.php?page=services">Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div class="card">
+						<div class="card-block">
+							<h3 class="card-title">DEWORMING</h3>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+							<a title="Read more" class="read-more" href="index.php?page=services">Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div class="card">
+						<div class="card-block">
+							<h3 class="card-title">TREATMENT</h3>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+							<a title="Read more" class="read-more" href="index.php?page=services">Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>	
+	</section>
 
 
 <style>
-.cta-100 {
-  margin-top: 100px;
-  padding-left: 8%;
-  padding-top: 7%;
+
+section .section-title{
+	text-align:center;
+	color:black;
+	margin-bottom:20px;
+	text-transform:uppercase;
 }
-.col-md-4{
-    padding-bottom:20px;
+#what-we-do{
+background:linear-gradient(rgba(255,255,255,0.6)100%, rgba(255,255,255,0.9)100%);
+  height: 38rem;
 }
-
-.white {
-  color: #fff !important;
-}
-.mt{float: left;margin-top: -20px;padding-top: 20px;}
-.bg-blue-ui {
-  background-color: #708198 !important;
-}
-figure img{width:300px;}
-
-#blogCarousel {
-  padding-bottom: 100px;
-}
-
-.blog .carousel-indicators {
-  left: 0;
-  top: -50px;
-  height: 50%;
-}
-
-
-/* The colour of the indicators */
-
-.blog .carousel-indicators li {
-  background: #708198;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-}
-
-.blog .carousel-indicators .active {
-  background: #0fc9af;
-}
-
-
-
-
-.item-carousel-blog-block {
-  outline: medium none;
-  padding: 15px;
-}
-
-.item-box-blog {
-  border: 1px solid #dadada;
-  text-align: center;
-  z-index: 4;
-  padding: 20px;
-}
-
-.item-box-blog-image {
-  position: relative;
-}
-
-.item-box-blog-image figure img {
-  width: 100%;
-  height: auto;
-}
-
-.item-box-blog-date {
-  position: absolute;
-  z-index: 5;
-  padding: 4px 20px;
-  top: -20px;
-  right: 8px;
-  background-color: #41cb52;
-}
-
-.item-box-blog-date span {
-  color: #fff;
-  display: block;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.item-box-blog-date span.mon {
-  font-size: 18px;
-}
-
-.item-box-blog-date span.day {
-  font-size: 16px;
-}
-
-.item-box-blog-body {
-  padding: 10px;
-}
-
-.item-heading-blog a h5 {
-  margin: 0;
-  line-height: 1;
-  text-decoration:none;
-  transition: color 0.3s;
-}
-
-.item-box-blog-heading a {
-    text-decoration: none;
-}
-
-.item-box-blog-data p {
-  font-size: 13px;
-}
-
-.item-box-blog-data p i {
-  font-size: 12px;
-}
-
-.item-box-blog-text {
-  max-height: 100px;
-  overflow: hidden;
-}
-
-.mt-10 {
-  float: left;
-  margin-top: -10px;
-  padding-top: 10px;
-}
-
-.btn.bg-blue-ui.white.read {
-  cursor: pointer;
-  padding: 4px 20px;
-  float: left;
+#what-we-do .card{
   margin-top: 10px;
+	padding: 1rem!important;
+  background-color: white;
+	border-color: black;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
 }
+#what-we-do .card:hover{
+  background-color: #337ab7;
+	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+#what-we-do .card .card-block{
+	  padding-left: 50px;
+    position: relative;
+}
+#what-we-do .card .card-block a{
+	color:#a00000 !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card .card-block a i{
+	display:none;
+ 
+	
+}
+#what-we-do .card:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+}
+</style-->
 
-.btn.bg-blue-ui.white.read:hover {
-  box-shadow: 0px 5px 15px inset #4d5f77;
+<section id="about" class="about">
+<br> 
+<div class= "container mission">
+<h1 class="text-center"><b>MISSION</b></h1>
+<p> This website aims  to ensure partnerships among the veterinary clinic and its valuable clients for the welfare and safety o the pets. It will serve 
+    as a platform for the convienient access of the veterinary services for the  customer's pets in this time of pandemic.
+</p>
+
+<h1 class="text-center"><b>VISION</b></h1>
+<p> We envision an exceptional and compassionate animal care that would strengthen the bond among our clients and their pets. </p>
+
+</div>
+
+<style>
+
+.mission{
+ background-color: transparent;
+ border: 4px  solid white;
+ width: 100%;
+ }
+
+.mission p{
+    text-align:center;
+    color: white;
+    font: arial;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-size: 25px;
 }
 </style>
 
 
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
+<br><br>
+    <h1 class="text-center"><b>OUR TEAM</b></h1>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>WELLNESS CARE</h2>
-                <p>Your pet should see their veterinarian about once every year for an annual physical. Older pets should visit twice per year to help prevent any major health developments and guarantee early treatment. A wellness exam will typically involve a physical exam of their ears, nose, eyes, skin, coat, teeth, and gums. Your veterinarian will also listen to your pet’s heart and lungs to assess their function. Weight is recorded and their nutrition is evaluated.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>GROOMING</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>UNCODITIONAL LOVE FUND</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risusDonec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-        </div>
+	
+	<div class="container">
+	<div class="row">
+	
+	<!--team-1-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/20211124_181435_0000.PNG" class="img-fluid" />
+	<h3>Dr. Christoper Nhelan A. Llamas</h3>
+	<p>Veterinarian</p>
+	</div>
+	
+	<div class="team-back">
+	<span>
+			-Resident Veterinarian<br>
+			-Graduated 2021<br>
+			-Licensed Veterinarian since September 2021<br>
+			-Co-owner and Resident Veterinarian of Petlantis Veterinary Clinic at Ligao City, Albay<br>
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-1-->
+	
+	<!--team-2-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639200349183.PNG" class="img-fluid" />
+	<h3>Dr. Ma. Michelle T. Balila</h3>
+	<p>Veterinarian</p>
+	</div>
+	
+	<div class="team-back">
+	<span>
+			-Resident Veterinarian<br>
+			-Graduated 2021<br>
+			-Licensed Veterinarian since September 2021<br>
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-2-->
+	
+	<!--team-3-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639200349169.PNG" class="img-fluid" />
+	<h3>Dr. Gabriela Mae M. Cedo</h3>
+	<p>Veterinarian/Owner</p>
+	</div>
+	
+	<div class="team-back">
+	<span>
+	
+			-Owner/Resident Veterinarian<br>
+			-Graduated 2019<br>
+			-Licensed Veterinarian since September 2019<br>
+			-Senior Veterinarian at Albay Pet Care and Grooming Center Co. and Mayon Veterinary Care Specialist<br>
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-3-->
+	
     </div>
-</section-->
-<!-- Create section with heigth 75px-->
-
-<!--section id="sponsors" class="sponsors" style="height:500px; background-color:red;">
-
-</section-->
-
-<section id="about" class="about" style="height:850px; background-color:green;"></section>
-
-<!--section id="services" class="services" style="height:850px; background-color:blue;"></section-->
-<section id="review" class="review" style="height:850px; background-color:violet;">
-<br><br><br>
-UNCODITIONAL LOVE FUND
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risusDonec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p></section>
-<section id="contact" class="contact" style="height:750px; background-color:orange;"></section>
+	</div>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
-
-.home-subheader {
-    font-family: tahoma;
+body
+{
+	background:#00bcd4;
 }
-#home-subheader {
 
+h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.our-team-main img
+{
+	border-radius:80%;
+	margin-bottom:20px;
+	width: 150px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left: 10px;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+	font-size: 20px;
+	
+}
+
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+
+</style>
+
+<style>
+  .jumbotron{
+ margin: 13px; 
+ background:linear-gradient(rgba(255,255,255,0.6)100%, rgba(255,255,255,0.9)100%), url('src/img/fixtures/login_background/1637725896660.JPEG')no-repeat; 
+ background-size: cover; 
+ font-family: tahoma;
+ background-attachment: static;
+}
+
+ .jumbotron h1{
+  color: black;
+  font-size: 2.3em;
+  
+}
+ .jumbotron p{
+   color: black;
+   font-size: 1.5em;
+   font-style: italic;
+}
+
+  </style>
+
+<section id="services" class="services">
+	
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<br><br><br>
+
+	<div class= "container mission">
+<p> At Ragay Pet Wellness Center we want yout pet to live a healthy, happy life!<br>
+	Our focus is on Preventative Wellness; after all, prevention is the very best medicine!<br>
+	We know that sometimes in order to stay well, first you have to get well, that's why we are also able to
+	treat your pet if they are feeling a bit under the weather. </p>
+</div><br><br><br>
+	<div class="container">
+	<div class="row">
+	<h1 class="text-center"><b>OUR SERVICES</b></h1>
+	<!--team-1-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639234890514.JPG" class="img-fluid" />
+	<h3>Grooming Services</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+	Complete grooming<br>
+	-bath<br>
+	-haircut<br>
+	-nail trim<br>
+	-ear cleaning<br>
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-1-->
+	
+	<!--team-2-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639236610653.PNG" class="img-fluid" />
+	<h3>Deworming</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+		Deworming is depends on your pet weight
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-2-->
+	
+	<!--team-3-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639234890527.JPEG" class="img-fluid" />
+	<h3>Vaccinations</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+	Tailored to meet your pets specific needs based on their environment and social life. Not every pet has the same vaccination needs. 
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-3-->
+	
+	<!--team-4-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639237075925.PNG" class="img-fluid" />
+	<h3>Theraphy Laser</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+		Our Theraphy laser can provide pain relief and wound care for your pet.
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-4-->
+	
+	<!--team-5-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639234890502.JPG" class="img-fluid" />
+	<h3>Advanced Diagnostic</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+		If your pet needs ongoing care such as  periodic bloodwork or blood pressure monitoring, will work with you to create a schedule that suit you and your pet.
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-5-->
+	
+	<!--team-6-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="src/img/fixtures/login_background/1639236610629.PNG" class="img-fluid" />
+	<h3>Dental Cleaning</h3>
+	</div>
+	
+	<div class="team-back">
+	<span>
+	Tooth decay in your pet can cause numerous problems, including rotten teeth infection and heart disease. Regular dental
+	visits are recommended to control damage to the teeth and gums  and prevent halitosis.
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-6-->
+	
+	
+	
+	</div>
+	</div>
+
+<style>
+
+h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 100px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+	font-size: 18px;
+	
+}
+
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
 }
 
 </style>

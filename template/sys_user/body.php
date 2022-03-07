@@ -1,15 +1,4 @@
-<!--
-    Project Title:
-    Code Name: 
-    Code Color: 
-    Code Hex: 
-    Description:
-    Start:
-    Developer: 
-        > Github: https://github.com/bepat14
-        > Email: 
-        > FB:
--->
+
 <?php
 
 include 'config/database.php';
@@ -24,7 +13,7 @@ include 'config/database.php';
     <title><?php echo getenv('SYS_NAME') ?> v<?php echo getenv('SYS_VERSION') ?> | <?php echo $title; ?></title> 
     <meta name="description" content="">
     <meta name="keywords" content=""> 
-    <meta name="author" content="Carl Angelo Nievarez"> 
+    <meta name="author" content=""> 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="72x72" href="dist/img/favicon/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="dist/img/favicon/apple-icon-76x76.png">
@@ -143,5 +132,12 @@ include 'config/database.php';
     
 </script>
 <style>
-    
+    body {
+        background: #F8F7F4;
+        background: url('src/img/fixtures/login_background/20211119_173327_0003.PNG') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 </style>

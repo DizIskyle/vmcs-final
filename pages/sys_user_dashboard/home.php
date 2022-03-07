@@ -5,21 +5,21 @@
 </ol>
 <h1>Dashboard</h1>
 
-<h1><?php echo $_SESSION['system_usercategory']; ?></h1>
+
 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		        <div class="panel panel-verdun-green gear-third">
+		        <div class="panel panel-loulou">
 		            <div class="panel-heading">
 		                <div class="row">
 		                    <div class="col-xs-3">
-		                        <i class="fa fa-gear fa-5x"></i> 
+		                        <i class="fa fa-address-book-o fa-5x"></i> 
 		                    </div>
 		                    <div class="col-xs-9 text-right">
-		                        <div class="huge">456</div>
-		                        <div>Flexo Cylinder </div>
+		                        <div class="huge">&#8734;</div>
+		                        <div>Profile</div>
 		                    </div>
 		                </div>
 		            </div>
-		            <a href="index.php?page=flexocylinder">
+		            <a href="dashboard.php?page=profile">
 		                <div class="panel-footer">
 		                    <span class="pull-left">View Details</span>
 		                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -37,8 +37,8 @@
 		                        <i class="fa fa-folder-o fa-5x"></i>
 		                    </div>
 		                    <div class="col-xs-9 text-right">
-		                        <div class="huge">100</div>
-		                        <div>Vitamins</div>
+		                        <div class="huge">&#8734;</div>
+		                        <div>Pets</div>
 		                    </div>
 		                </div>
 		            </div>
@@ -57,11 +57,11 @@
 		            <div class="panel-heading">
 		                <div class="row">
 		                    <div class="col-xs-3">
-		                        <i class="fa fa-database fa-5x"></i>
+		                        <i class="fa fa-calendar fa-5x"></i>
 		                    </div>
 		                    <div class="col-xs-9 text-right">
 		                        <div class="huge">&#8734;</div>
-		                        <div>Export</div>
+		                        <div>Appointment</div>
 		                    </div>
 		                </div>
 		            </div>
@@ -75,11 +75,11 @@
 		        </div>
 		    </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		        <div class="panel panel-loulou">
+		        <div class="panel panel-verdun-green gear-third">
 		            <div class="panel-heading">
 		                <div class="row">
 		                    <div class="col-xs-3">
-		                        <i class="fa fa-address-book-o fa-5x"></i>
+		                        <i class="fa fa-gear fa-5x"></i>
 		                    </div>
 		                    <div class="col-xs-9 text-right">
 		                        <div class="huge">&#8734;</div>

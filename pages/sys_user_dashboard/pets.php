@@ -1,45 +1,29 @@
 <br>
 <ol class="breadcrumb">
-  <li><a href="index.php?page=dashboard">Home</a></li>
+  <li><a href="dashboard.php">Home</a></li>
   <li>Pets</li>
-  <li>Dogs</li>
 </ol>
 
-<h1>Dogs</h1>
+<h1>Pets</h1>
 
-
-<button type="button" class="btn btn-success create-new">Add New Ticket</button><br><br>
+<button type="button" class="btn btn-success create-new">Add New Pet</button><br><br>
 <table class="table table-bordered responsive nowrap" id="example" width="100%">
 	<thead> 
 		<tr>
 			<th width="3%">No</th>
-			<th width="30%">Pet Code</th>
-			<th width="15%">Name</th>
+			<th width="6%">Pet Code</th>
 			<th width="6%">Category</th>
-			<th width="6%">Created by</th>
-			<th width="6%">Created Date</th>
-			<th width="15%">Updated by</th>
-			<th width="6%">Updated Date</th>
+			<th width="15%">Name</th>
+			<th width="15%">Adopted</th>
+			<th width="15%">Owner</th>
+			<th width="15%">Rescued from</th>
+			<th width="6%">Process Date</th>
+			<th width="15%">Processed by</th>
 			<th width="6%">Status</th>
 			<th></th>
 		</tr>
 	</thead>
-	<tfoot>
-		<tr>
-			<th width="3%">No</th>
-			<th width="30%">Pet Code</th>
-			<th width="15%">Name</th>
-			<th width="6%">Category</th>
-			<th width="6%">Created by</th>
-			<th width="6%">Created Date</th>
-			<th width="15%">Updated by</th>
-			<th width="6%">Updated Date</th>
-			<th width="6%">Status</th>
-			<th></th>
-		</tr>
-	</tfoot>
 </table>
-
 
 <div class="modal fade" id="modal-id">
   	<div class="modal-dialog">
@@ -53,86 +37,106 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="form-group">
-								<label for="">Machine</label>
-								<input type="text" class="form-control" placeholder="Machine" name="machine" id="machine"/>
+								<label for="">Pet Code</label>
+								<input type="text" class="form-control" placeholder="Pet Code" name="pet_code" id="pet_code" title="This will be auto-generated" readonly="readonly"/>
 								<span id="check-e" class="check-e-schednumber"></span>
+							</div>
+						</div>            
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="form-group">
+								<label for="">Category</label>
+								<select name="pet_catid" id="pet_catid" class="form-control">
+									<?php 
+											$data1 = "";
+											$query1 = "SELECT * FROM pet_category ORDER BY petcat_name ASC";
+
+											if (!$result1 = mysqli_query($db,$query1)) {
+												exit(mysqli_error());
+											}
+										
+											if(mysqli_num_rows($result1) > 0) {
+												while($row1 = mysqli_fetch_assoc($result1))
+												{
+													$data1 .= '<option value="'.$row1['pet_catid'].'">'.$row1['petcat_name'].'</option>';
+												}
+											} else
+											{
+												$data1 .="";
+											}
+											echo $data1;                                                                            
+										?>
+								</select>
+							</div>
+						</div>   
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="form-group">
+								<label for="">Pet Name</label>
+								<input type="text" class="form-control" placeholder="Pet Name" name="pet_name" id="pet_name"/>
+							</div>
+						</div>        
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="form-group">
+								<label for="">Adopted?</label>
+								<select name="pet_adopted" id="pet_adopted" class="form-control">
+									<option value="Adopted">Yes</option>
+									<option value="Rescued">Rescued</option>
+									<option value="Own">No</option>
+								</select>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="form-group">
-								<label for="">Color</label>
-								<input type="text" class="form-control" placeholder="Color" name="color" id="color"/>
-							</div>
-						</div>                
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<div class="form-group">
-								<label for="">Type</label>
-								<select name="cylindertype" id="cylindertype" class="form-control">
-									<option value="Anilox">Anilox</option>
-									<option value="Anilox Glue">Anilox Glue</option>
-									<option value="Cut Cylinder Without Heat Seal">Cut Cylinder Without Heat Seal</option>
-									<option value="Cut Cylinder With Heat Seal">Cut Cylinder With Heat Seal</option>
-									<option value="Cut Cylinder Without Gear">Cut Cylinder Without Gear</option>
-									<option value="Forming Plate">Forming Plate</option>
-									<option value="Forming Plate Down Only">Forming Plate Down Only</option>
-									<option value="Forming Plate Up Only">Forming Plate Up Only</option>
-									<option value="Gear Only">Gear Only</option>
-									<option value="Magnetic Cylinder">Magnetic Cylinder</option>
-									<option value="Plate Cylinder">Plate Cylinder</option>
-									<option value="Rubber for Coating">Rubber for Coating</option>
-									<option value="Rubber Roller">Rubber Roller</option>
-									<option value="Tint Rubber">Tint Rubber</option>
-									<option value="Wax Applicator">Wax Applicator</option>
+								<label for="">Pet Owner</label>
+								<select name="pet_adoptedfrom" id="pet_adoptedfrom" class="form-control">
+										<?php 
+											$data2 = "";
+											$query2 = "SELECT * FROM users ORDER BY userid ASC";
+
+											if (!$result2 = mysqli_query($db,$query2)) {
+												exit(mysqli_error());
+											}
+										
+											if(mysqli_num_rows($result2) > 0) {
+												while($row2 = mysqli_fetch_assoc($result2))
+												{
+													$data2 .= '<option value="'.$row2['userid'].'">'.$row2['userfirstname'].' '.$row2['userlastname'].'</option>';
+												}
+											} else
+											{
+												$data2 .="";
+											}
+											echo $data2;                                                                            
+										?>
 								</select>
 							</div>
-						</div>       
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						</div>	
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="form-group">
-								<label for="">Width (inch)</label>
-								<input type="text" class="form-control" placeholder="Width (inch)" name="widthinch" id="widthinch"/>
+								<label for="">Rescued From?</label>
+								<input type="text" class="form-control" placeholder="Rescued From" name="pet_rescuedfrom" id="pet_rescuedfrom"/>
 							</div>
 						</div>	
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="form-group">
-								<label for="">Width (mm)</label>
-								<input type="text" class="form-control" placeholder="Width (mm)" name="widthmm" id="widthmm"/>
+								<label for="">Process Date</label>
+								<input type="text" class="form-control" placeholder="Quantity" name="pet_processdate" id="pet_processdate"title="This will be auto-generated" readonly="readonly" />
 							</div>
-						</div>	
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						</div>		
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="form-group">
-								<label for="">Specification</label>
-								<input type="text" class="form-control" placeholder="Specification" name="spec" id="spec"/>
+								<label for="">Status</label>
+								<select name="pet_status" id="pet_status" class="form-control">
+									<option value="In Custody">In Custody</option>
+									<option value="Adopted">Adopted</option>
+									<option value="Deleted">Deleted</option>
+								</select>
 							</div>
-						</div>	
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<div class="form-group">
-								<label for="">Quantity</label>
-								<input type="text" class="form-control" placeholder="Quantity" name="qty" id="qty"/>
-							</div>
-						</div>	
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<div class="form-group">
-								<label for="">Plate</label>
-								<input type="text" class="form-control" placeholder="Plate" name="plate" id="plate"/>
-							</div>
-						</div>	
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<div class="form-group">
-								<label for="">Double Sided Tape</label>
-								<input type="text" class="form-control" placeholder="Double Sided Tape" name="dstape" id="dstape"/>
-							</div>
-						</div>	
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<div class="form-group">
-								<label for="">Distortion</label>
-								<input type="text" class="form-control" placeholder="Distortion" name="distortion" id="distortion"/>
-							</div>
-						</div>	
+						</div>
 						<!--ID-->
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: none;">
 							<div class="form-group">
 								<label for="">ID</label>
-								<input type="text" class="form-control" placeholder="ID" name="machid" id="machid" value="" />
+								<input type="text" class="form-control" placeholder="ID" name="pet_id" id="pet_id" value="" />
 								<span id="check-e"></span>
 							</div>
 						</div>
@@ -147,33 +151,19 @@
 	</div>
 </div>
 
-
-      
 <script type="text/javascript">
 $(document).ready(function() {
-    //Versions
-    $('#selectversion').change(function(){
-        if($(this).val() == 'version1'){ // or this.value == 'volvo'
-            window.location.href = "index.php?page=flexocylinder";
-        }else if ($(this).val() == 'version2') {
-            window.location.href = "index.php?page=flexocylinder_v2";
-        } else {
-            window.location.href = "index.php?page=flexocylinder";
-        }
-    });
-
     //Reading
     var dataTable = $('#example').DataTable({
-        "pageLength": 100,
         "processing": true,
         "serverSide": true,
         "ajax": {
-            url: "pages_exe/flexocylinder_exe_dt.php",
+            url: "pages_exe/sys_user_dashboard/pets_exe_dt.php",
             type: "POST"
         }
     });
 
-    //Adding
+	//Adding
     $('.create-new').click(function() {
         var action = $(this).attr("id");
         var theform = $("#section-form").validate();
@@ -183,67 +173,31 @@ $(document).ready(function() {
         $("#section_btn").attr('name', 'submit_btn');
         $("#section_btn").attr('data-id', '');
 
-        $("#machine").val('');
-        $("#color").val('');
-        $("#widthinch").val('');
-        $("#widthmm").val('');
-        $("#cylindertype").val($("#cylindertype option:first").val());
-        $("#spec").val('');
-        $("#qty").val('');
-        $("#plate").val('');
-        $("#dstape").val('');
-        $("#distortion").val('');
-        $("#machid").val('');
+        $("#pet_catid").val($("#pet_catid option:first").val());
+        $("#pet_name").val('');
+        $("#pet_adopted").val($("#pet_adopted option:first").val());
+        $("#pet_adoptedfrom").val($("#pet_adoptedfrom option:last").val());
+        $("#pet_rescuedfrom").val('');
+        $("#pet_processdate").val('');
+        $("#pet_status").val($("#pet_status option:first").val());
+        $("#pet_id").val('');
 
         theform.resetForm();
 
         $("#modal-id").modal("show");
     });
 
-    //Adding Validation
+	//Adding Validation
     $("#section-form").validate({
         rules: {
-            machine: {
+            pet_name: {
                 required: true
-            },
-            color: {
-                required: true
-            },
-            widthinch: {
-                required: true,
-                number: true
-            },
-            widthmm: {
-                required: true,
-                number: true
-            },
-            spec: {
-                required: true
-            },
-            qty: {
-                required: true,
-                number: true
-            },
-            plate: {
-                required: true,
-                number: true
-            },
-			dstape: {
-                required: true
-            },
-			distortion: {
-                required: true
-            },
+            },  
         },
         messages: {
-            machine: {
-                required: "Please enter machine name"
-            },
-            color: {
-                required: "Please enter machine color"
-            },
-            qty: {
-                required: "Please enter quantity used in this machine"
+           
+            pet_name: {
+                required: "Please make sure pet name not empty"
             },
         },
         submitHandler: submitForm
@@ -251,27 +205,30 @@ $(document).ready(function() {
 
     function submitForm() {
         var data = $("#section-form").serialize();
+        console.log(data);
         $.ajax({
             type: 'POST',
-            url: 'pages_exe/flexocylinder_exe_crud.php',
+            url: 'pages_exe/sys_user_dashboard/pets_exe_crud.php',
             data: data,
             success: function(data, status) {
-                //console.log(data);
                 if (data != 999) {
+                    console.log(data);
                     $("#modal-id").modal("hide");
                     //reload server-side datatable
                     setTimeout(function() {
                         $('#example').DataTable().ajax.reload();
                     }, 1000);
                 } else {
+                    console.log(data);
                     alert('error');
                 }
             }
         });
         return false;
     }
+	
 
-    //Update
+	//Update
     $(document).on('click', '#update', function(e) {
         e.preventDefault();
         var id = $(this).data('id');
@@ -279,28 +236,29 @@ $(document).ready(function() {
 
         $.ajax({
             type: 'POST',
-            url: 'pages_exe/flexocylinder_exe_crud.php',
+            url: "pages_exe/sys_user_dashboard/pets_exe_crud.php",
             data: {
                 read_selected: action,
                 crud_id: id
             },
             success: function(data, status) {
-                //console.log(data);
+                console.log(data);
                 var cruddata = JSON.parse(data);
-                $("#machid").val(cruddata.machid);
-                $("#machine").val(cruddata.machine);
-                $("#color").val(cruddata.color);
-                $("#widthinch").val(cruddata.widthinch);
-                $("#widthmm").val(cruddata.widthmm);
-                $("#cylindertype").val(cruddata.cylindertype);
-                $("#spec").val(cruddata.spec);
-                $("#qty").val(cruddata.qty);
-                $("#plate").val(cruddata.plate);
-                $("#dstape").val(cruddata.dstape);
-                $("#distortion").val(cruddata.distortion);
+				//parse json data
+
+				$("#pet_catid").val(cruddata.pet_catid);
+				$("#pet_name").val(cruddata.pet_name);
+				$("#pet_adopted").val(cruddata.pet_adopted);
+				$("#pet_adoptedfrom").val(cruddata.pet_adoptedfrom);
+				$("#pet_rescuedfrom").val(cruddata.pet_rescuedfrom);
+				$("#pet_processdate").val(cruddata.pet_processdate);
+				$("#pet_status").val(cruddata.pet_status);
+				$("#pet_id").val(cruddata.pet_id);
+
+
 
                 $("#section_btn").attr('name', 'update_btn');
-                $("#section_btn").attr('data-id', cruddata.machid);
+                $("#section_btn").attr('data-id', cruddata.job_id);
                 $(".modal-title").text('Edit');
                 $("#section_btn").text('Save Changes');
                 $("#modal-id").modal("show");
@@ -308,7 +266,7 @@ $(document).ready(function() {
         });
     });
 
-    //Delete
+	//Delete
     $(document).on('click', '#delete', function(e) {
         e.preventDefault();
         var id = $(this).data('id');
@@ -317,7 +275,7 @@ $(document).ready(function() {
             var action = "delete";
             $.ajax({
                 type: 'POST',
-                url: 'pages_exe/flexocylinder_exe_crud.php',
+                url: "pages_exe/sys_user_dashboard/pets_exe_crud.php",
                 data: {
                     delete_selected: action,
                     crud_id: id,
@@ -331,5 +289,8 @@ $(document).ready(function() {
             });
         }
     });
+
 });
+
+
 </script>
