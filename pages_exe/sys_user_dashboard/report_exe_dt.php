@@ -27,8 +27,8 @@ $totalFilter=$totalData;
 
 //Search
 $sql =" SELECT * FROM appointment
-        -- WHERE sched_status = 'Active'
-        AND 1=1
+        /*WHERE pet_updateddate != 'disable'*/
+        WHERE 1=1
         ";
 
 if(!empty($request['search']['value'])){
