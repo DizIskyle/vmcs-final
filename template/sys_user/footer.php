@@ -6,92 +6,102 @@
    </div>
     </div-->
 
-<footer class="section footer-classic context-dark bg-image" style="background: #646464;">
-        <div class="container-footer">
-          <div class="row row-30">
-            <div class="col-md-4 col-xl-5">
-              <div class="pr-xl-4"><a class="brand" href="index.html"></a>
-                <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
-                <!-- Rights-->
-                <p><small><?php echo getenv('SYS_COMPANY') ?> &copy; 2021</small> | <span class="fa fa-compass"></span> by Cyber Phoenix <br><small><?php echo getenv('SYS_NAME') ?> v<?php echo getenv('SYS_VERSION') ?></small></p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <h4><b>Contacts</b></h4>
-              <dl class="contact-list">
-                <dt><b>Address:</b></dt>
-                <dd>Ragay, Camarines Sur</dd>
-              </dl>
-              <dl class="contact-list">
-                <dt><b>Email:</b></dt>
-                <dd><a href="mailto:#">ragayveterinaryhealthcenter@gmail.com</a></dd>
-              </dl>
-              <dl class="contact-list">
-                <dt><b>Phones:</b></dt>
-                <dd><a href="tel:#"></a>
-                </dd>
-              </dl>
-            </div>
-            <div class="col-md-4 col-xl-3">
-              <h5>Links</h5>
-              <ul class="nav-list">
-              <li><a href="index.php?page=home">Home</a></li>
-            <li><a href="index.php?page=about">About Us</a></li>
-            <li><a href="index.php?page=services">Services</a></li>            
-            <li><a href="index.php?page=gallery">Gallery</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!--footer starts from here-->
+<footer class="footer">
+<div class="container bottom_border">
+<div class="row">
+<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+<!--headin5_amrc-->
+<p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+<p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+<p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+<p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+
+
+</div>
+
+
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+<!--headin5_amrc-->
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Image Rectoucing</a></li>
+<li><a href="http://webenlance.com">Clipping Path</a></li>
+<li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+<li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+<li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+<li><a href="http://webenlance.com">Image Cropping</a></li>
+</ul>
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+
+
+<div class=" col-sm-4 col-md  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+<!--headin5_amrc ends here-->
+
+<ul class="footer_ul2_amrc">
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+</ul>
+<!--footer_ul2_amrc ends here-->
+</div>
+</div>
+</div>
+
+
+
+<!--foote_bottom_ul_amrc ends here-->
+<p class="text-center">Copyright @2017 | Designed With by <a href="#">Your Company Name</a></p>
+
+
+
+</footer>
 
 <style>
-.context-dark, .bg-gray-dark, .bg-primary {
-color: rgba(255, 255, 255, 0.8);
-}
+  /*footer*/
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-color:#263238; min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:#CCC;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
 
-.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
-    color: #ffffff;
-}
-.nav-list li {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
 
-.nav-list li a:hover:before {
-    margin-left: 0;
-    opacity: 1;
-    visibility: visible;
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
 }
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
 
-ul, ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
 
-.social-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 23px;
-    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
-}
-.social-container .col {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.nav-list li a:before {
-    content: "\f14f";
-    font: 400 21px/1 "Material Design Icons";
-    color: #4d6de6;
-    display: inline-block;
-    vertical-align: baseline;
-    margin-left: -28px;
-    margin-right: 7px;
-    opacity: 0;
 </style>
-
-

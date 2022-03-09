@@ -34,21 +34,22 @@
                         <li>
                             <a href="admin.php"><i class="fa fa-sliders fa-fw"></i> Dashboard</a>
                         </li>
-                        <li>
-                            <a href="admin.php?page=veterinarians"><i class="fa fa-address-card-o fa-fw"></i> Veterinarians</a>
-                        </li>
-                        <li>
-                            <a href="admin.php?page=customers"><i class="fa fa-address-book-o fa-fw"></i> Customers</a>
-                        </li>
-                        
-                        <li>
-                            <a href="admin.php?page=admin"><i class="fa fa-address-book-o fa-fw"></i> Admin</a>
-                        </li>
+                        <li id="nav_foldericon">
+                            <a href="#"><i  class="fa fa-folder"></i> Users <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li> <a href="admin.php?page=customers" class="fa fa-users">  Customer</a></li>
+                                <li> <a href="admin.php?page=veterinarians" class="fa fa-user-md">  Veterinarian</a></li>
+                                <li> <a href="admin.php?page=admin" class="fa fa-user">  Admin</a></li>
+            
+                            </ul>
+                            
+                        </li>  
                         <li>
                             <a href="admin.php?page=schedule"><i class="fa fa-calendar fa-fw"></i> My Schedule</a>
                         </li>
                         <li>
-                            <a href="admin.php?page=vet-schedule"><i class="fa fa-calendar fa-fw"></i> Vet Customer Schedule</a>
+                            <a href="admin.php?page=report"><i class="fa fa-calendar fa-fw"></i> Vet Customer Schedule</a>
                         </li>
                         <!--li>
                             <a href="admin.php?page=appointment"><i class="fa fa-calendar fa-fw"></i> Appointment</a>
@@ -60,22 +61,14 @@
                             <a href="admin.php?page=pets-category"><i class="fa  fa-optin-monster fa-fw"></i> Pets Category</a>
                         </li>
                         <li id="nav_foldericon">
-                            <a href="#"><i  class="fa fa-folder-o fa-fw"></i> Inventory <span class="fa arrow"></span></a>
+                            <a href="#"><i  class="fa fa-folder fa-fw"></i> Inventory <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li> <a href="admin.php?page=inventory">Item</a></li>
-                                <li> <a href="admin.php?page=purchase">Purchase</a></li>
-                                <li> <a href="admin.php?page=sale">Sales</a></li>
-                                <li> <a href="admin.php?page=search">Search</a></li>
+                                <li> <a href="admin.php?page=stocks">Item</a></li>
+                                <li>  <a href="admin.php?page=stocks-category">Stock Category</a></li>
                                 <li> <a href="admin.php?page=report">Reports</a></li>
                             </ul>
                         </li>  
-                        <li>
-                            <a href="admin.php?page=stocks"><i class="fa  fa-cube fa-fw"></i> Stocks</a>
-                        </li>
-                        
-                        <li>
-                            <a href="admin.php?page=stocks-category"><i class="fa  fa-cube fa-fw"></i> Stocks Category</a>
-                        </li>
+    
                         <li>
                             <a href="admin.php?page=videocall"><i class="fa fa-video-camera fa-fw"></i> Start Meeting</a>
                         </li>

@@ -61,7 +61,7 @@
 											if(mysqli_num_rows($result1) > 0) {
 												while($row1 = mysqli_fetch_assoc($result1))
 												{
-													$data1 .= '<option value="'.$row1['userid'].'">'.$row1['username'].'</option>';
+													$data1 .= '<option value="'.$row1['username'].'">'.$row1['username'].'</option>';
 												}
 											} else
 											{

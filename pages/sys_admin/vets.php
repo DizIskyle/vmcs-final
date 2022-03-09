@@ -245,9 +245,7 @@ $(document).ready(function() {
             userfirstname: {
                 required: true,
             },
-            usermiddlename: {
-                required: true,
-            },
+           
             userlastname: {
                 required: true,
             },
@@ -278,11 +276,8 @@ $(document).ready(function() {
                 minlength: "Your firstname must consist of at least 5 characters",
                 maxlength: "Your firstname must consist of at least 5 characters"
             },
-            usermiddlename: {
-                required: "Please enter a middlename",
-                minlength: "Your middlename must consist of at least 5 characters",
-                maxlength: "Your middlename must consist of at least 5 characters"
-            },
+
+            
             userlastname: {
                 required: "Please enter a lastname",
                 minlength: "Your lastname must consist of at least 5 characters",
@@ -378,9 +373,7 @@ $(document).ready(function() {
             update_userfirstname: {
                 required: true,
             },
-            update_usermiddlename: {
-                required: true,
-            },
+          
             update_userlastname: {
                 required: true,
             },
@@ -403,11 +396,7 @@ $(document).ready(function() {
                 minlength: "Your firstname must consist of at least 5 characters",
                 maxlength: "Your firstname must consist of at least 5 characters"
             },
-            update_usermiddlename: {
-                required: "Please enter a middlename",
-                minlength: "Your middlename must consist of at least 5 characters",
-                maxlength: "Your middlename must consist of at least 5 characters"
-            },
+         
             update_userlastname: {
                 required: "Please enter a lastname",
                 minlength: "Your lastname must consist of at least 5 characters",

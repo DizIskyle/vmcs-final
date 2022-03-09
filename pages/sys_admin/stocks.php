@@ -23,21 +23,7 @@
 			<th></th>
 		</tr>
 	</thead>
-	<tfoot>
-		<tr>
-            <th width="3%">No</th>
-			<th width="6%">Stock Code</th>
-			<th width="6%">Category</th>
-			<th width="6%">Name</th>
-			<th width="6%">Quantity</th>
-			<th width="6%">Price</th>
-			<th width="6%">Expiration Date</th>
-			<th width="6%">Process Date</th>
-			<th width="6%">Processed by</th>
-			<th width="6%">Status</th>
-			<th></th>
-		</tr>
-	</tfoot>
+
 </table>
 
 <div class="modal fade" id="modal-id">
@@ -53,7 +39,7 @@
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="form-group">
 								<label for="">Item Code</label>
-								<input type="text" class="form-control" placeholder="Item Code" name="stock_code" id="stock_code"/>
+								<input type="text" class="form-control" placeholder="Item Code" name="stock_code" id="stock_code" title="This will be auto-generated" readonly="readonly"/>
 								<span id="check-e" class="check-e-schednumber"></span>
 							</div>
 						</div>            
@@ -72,7 +58,7 @@
 											if(mysqli_num_rows($result1) > 0) {
 												while($row1 = mysqli_fetch_assoc($result1))
 												{
-													$data1 .= '<option value="'.$row1['stockcat_id'].'">'.$row1['stockcat_name'].'</option>';
+													$data1 .= '<option value="'.$row1['stockcat_name'].'">'.$row1['stockcat_name'].'</option>';
 												}
 											} else
 											{
@@ -191,26 +177,6 @@ $(document).ready(function() {
     $("#section-form").validate({
         rules: {
 			//rules
-			stock_code: {
-				required: true,
-				minlength: 3,
-				maxlength: 10/* ,
-				remote: {
-					url: "pages_exe/sys_user_dashboard/stocks_exe_dt.php",
-					type: "POST",
-					data: {
-						stock_code: function() {
-							return $("#stock_code").val();
-						},
-						stock_id: function() {
-							return $("#stock_id").val();
-						},
-						action: function() {
-							return 'check_stock_code';
-						}
-					}
-				} */
-			},
 			stock_catid: {
 				required: true
 			},
@@ -241,12 +207,7 @@ $(document).ready(function() {
         },
         messages: {
 			//messages
-			stock_code: {
-				required: "Please enter a code",
-				minlength: "Your code must consist of at least 3 characters",
-				maxlength: "Your code must be less than 10 characters",
-				remote: "This code is already in use"
-			},
+		
 			stock_catid: {
 				required: "Please select a category"
 			},

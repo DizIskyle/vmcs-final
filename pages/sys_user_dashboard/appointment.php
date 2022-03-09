@@ -21,19 +21,7 @@
 			<th></th>
 		</tr>
 	</thead>
-	<tfoot>
-		<tr>
-            <th width="3%">No</th>
-			<th width="6%">Veterinarian</th>
-			<th width="6%">Date</th>
-			<th width="6%">Day</th>
-			<th width="6%">Start Time</th>
-			<th width="6%">End Time</th>
-			<th width="6%">Consulting Time</th>
-			<th width="6%">Status</th>
-            <th></th>
-		</tr>
-	</tfoot>
+	
 </table>
 
 <div class="modal fade" id="modal-id">

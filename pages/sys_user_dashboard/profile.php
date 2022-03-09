@@ -1,7 +1,7 @@
 <br>
 <ol class="breadcrumb">
   <li><a href="index.php?page=dashboard">Home</a></li>
-</ol>
+</ol> 
 
 <div class="container">
 	<div class="row">
@@ -42,11 +42,17 @@
                                 <div class="form-control here"> <?php echo $_SESSION['system_usermiddlename']; ?> </div>
                                 </div>
                               </div>
-                              <!--div class="form-group row">
+                              <div class="form-group row">
+                                <label class="col-4 col-form-label">ID</label> 
+                                <div class="col-8">
+                                <div class="form-control here"> <?php echo $_SESSION['system_userid']; ?> </div>
+                                </div>
+                              </div>
+                              <div class="form-group row">
                                 <label class="col-4 col-form-label">Email</label> 
                                 <div class="col-8">
-                                <div class="form-control here"> <?php echo $_SESSION['system_useremail']; ?> </div>
-                                </div-->
+                                <div class="form-control here"> <?php echo $_SESSION['system_userid']; ?> </div>
+                                </div>
                               </div>
                               <div class="form-group row">
                                 <div class="offset-4 col-8">
@@ -121,11 +127,11 @@
 						</div>
 						<!--ID-->
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-							<!--div class="form-group">
+							<div class="form-group">
 								<label for="">ID</label>
 								<input type="text" class="form-control" placeholder="ID" name="update_userid" id="update_userid" value="" />
 								<span id="check-e"></span>
-							</div-->
+							</div>
 						</div>
 					</div>
 				</div>

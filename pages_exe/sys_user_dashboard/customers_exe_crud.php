@@ -209,24 +209,24 @@ if (isset($_POST['update_btn'])) {
     }  
 }
 
-//Delete
-if (isset($_POST["delete_selected"])) {
-    /*
-    Deleting a single record is done is not been implemented rather than we are changing the status to "Deleted" to keep the data hidden from the user.
-    */
+// //Delete
+// if (isset($_POST["delete_selected"])) {
+//     /*
+//     Deleting a single record is done is not been implemented rather than we are changing the status to "Deleted" to keep the data hidden from the user.
+//     */
 
-    $id=$_POST['crud_id'];
-    $query = "UPDATE users SET
-    userstatus = 'Deleted'
-    WHERE userid = '$id'";
+//     $id=$_POST['crud_id'];
+//     $query = "UPDATE users SET
+//     userstatus = 'Deleted'
+//     WHERE userid = '$id'";
 
-    if (!$result = mysqli_query($db,$query)) {
-        exit(mysql_error());
-    } 
-}
+//     if (!$result = mysqli_query($db,$query)) {
+//         exit(mysql_error());
+//     } 
+// }
 
 //Permanently Delete
-if (isset($_POST["permanent_delete_selected"])) {
+if (isset($_POST["delete_selected"])) {
     $id=$_POST['crud_id'];
     $query = "DELETE FROM users WHERE userid = '$id'";
 

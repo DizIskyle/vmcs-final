@@ -20,17 +20,7 @@
 			<th></th>
 		</tr>
 	</thead>
-	<tfoot>
-		<tr><th width="3%">No</th>
-			<th width="6%">Username</th>
-			<th width="6%">First Name</th>
-			<th width="6%">Middle Name</th>
-			<th width="6%">Last Name</th>
-			<th width="6%">Email</th>
-			<th width="6%">Status</th>
-			<th></th>
-		</tr>
-	</tfoot>
+
 </table>
 
 <!-- Add Modal -->
@@ -245,9 +235,6 @@ $(document).ready(function() {
             userfirstname: {
                 required: true,
             },
-            usermiddlename: {
-                required: true,
-            },
             userlastname: {
                 required: true,
             },
@@ -277,11 +264,6 @@ $(document).ready(function() {
                 required: "Please enter a firstname",
                 minlength: "Your firstname must consist of at least 5 characters",
                 maxlength: "Your firstname must consist of at least 5 characters"
-            },
-            usermiddlename: {
-                required: "Please enter a middlename",
-                minlength: "Your middlename must consist of at least 5 characters",
-                maxlength: "Your middlename must consist of at least 5 characters"
             },
             userlastname: {
                 required: "Please enter a lastname",
@@ -378,9 +360,7 @@ $(document).ready(function() {
             update_userfirstname: {
                 required: true,
             },
-            update_usermiddlename: {
-                required: true,
-            },
+          
             update_userlastname: {
                 required: true,
             },
@@ -403,11 +383,7 @@ $(document).ready(function() {
                 minlength: "Your firstname must consist of at least 5 characters",
                 maxlength: "Your firstname must consist of at least 5 characters"
             },
-            update_usermiddlename: {
-                required: "Please enter a middlename",
-                minlength: "Your middlename must consist of at least 5 characters",
-                maxlength: "Your middlename must consist of at least 5 characters"
-            },
+          
             update_userlastname: {
                 required: "Please enter a lastname",
                 minlength: "Your lastname must consist of at least 5 characters",

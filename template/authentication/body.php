@@ -8,7 +8,7 @@
     <title><?php echo getenv('SYS_NAME') ?> | Log In</title> 
     <meta name="description" content="">
     <meta name="keywords" content=""> 
-    <meta name="author" content="Carl Angelo Nievarez"> 
+    <meta name="author" content=""> 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="72x72" href="dist/img/favicon/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="dist/img/favicon/apple-icon-76x76.png">

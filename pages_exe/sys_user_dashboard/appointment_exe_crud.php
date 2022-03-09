@@ -28,20 +28,18 @@ if (isset($_POST['read_selected'])) {
 
 //Add
 if (isset($_POST['submit_btn'])) {
-    $appointment_customerid = $_SESSION['system_userid'];
+    $appointment_customerid = $_SESSION['system_username'];
     $appointment_vetid = $_POST['appointment_vetid'];
     $appointment_schedid = $_POST['appointment_schedid'];
     $appointment_code= "AP".rand(1,999);
     $appointment_reason = $_POST['appointment_reason'];
-    $appointment_time = "";
+    $appointment_time = $_POST['appointment_time'];
     $appointment_status = "Pending";
     $appointment_come = "";
-    $appointment_vetcomment = "";
-    $appointment_createdby= "";
-    $appointment_createddate = "";
+    $appointment_createddate = $currentdate;
 
     //Insert Data
-    $query = "INSERT INTO appointment (appointment_customerid, appointment_vetid, appointment_schedid, appointment_code, appointment_reason,appointment_time, appointment_status, appointment_come, appointment_vetcomment, appointment_createdby, appointment_createddate) VALUES ('$appointment_customerid', '$appointment_vetid', '$appointment_schedid', '$appointment_code', '$appointment_reason','$appointment_time', '$appointment_status', '$appointment_come', '$appointment_vetcomment', '$appointment_createdby', '$appointment_createddate')";
+    $query = "INSERT INTO appointment (appointment_customerid, appointment_vetid, appointment_schedid, appointment_code, appointment_reason,appointment_time, appointment_status, appointment_come, appointment_createddate) VALUES ('$appointment_customerid', '$appointment_vetid', '$appointment_schedid', '$appointment_code', '$appointment_reason','$appointment_time', '$appointment_status', '$appointment_come', '$appointment_createddate')";
     
 	$response = array();
 	if (!$result = mysqli_query($db,$query)) {

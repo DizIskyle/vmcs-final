@@ -57,11 +57,11 @@
 											if(mysqli_num_rows($result1) > 0) {
 												while($row1 = mysqli_fetch_assoc($result1))
 												{
-													$data1 .= '<option value="'.$row1['pet_catid'].'">'.$row1['petcat_name'].'</option>';
+													$data1 .= '<option value="'.$row1['petcat_name'].'">'.$row1['petcat_name'].'</option>';
 												}
 											} else
 											{
-												$data1 .="";
+												$data1 .=""; 
 											}
 											echo $data1;                                                                            
 										?>
@@ -99,7 +99,7 @@
 											if(mysqli_num_rows($result2) > 0) {
 												while($row2 = mysqli_fetch_assoc($result2))
 												{
-													$data2 .= '<option value="'.$row2['userid'].'">'.$row2['userfirstname'].' '.$row2['userlastname'].'</option>';
+													$data2 .= '<option value="'.$row2['username'].'">'.$row2['userfirstname'].' '.$row2['userlastname'].'</option>';
 												}
 											} else
 											{
@@ -119,7 +119,7 @@
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="form-group">
 								<label for="">Process Date</label>
-								<input type="text" class="form-control" placeholder="Quantity" name="pet_processdate" id="pet_processdate"title="This will be auto-generated" readonly="readonly" />
+								<input type="text" class="form-control" placeholder="Date" name="pet_processdate" id="pet_processdate"title="This will be auto-generated" readonly="readonly" />
 							</div>
 						</div>		
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

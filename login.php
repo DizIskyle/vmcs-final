@@ -11,9 +11,9 @@
     } else {
         if (isset($_SESSION['system_logged_in'])==true) { 
 ?>        
-            <script type="text/javascript">
-                window.location="index.php";
-            </script>
+                    <script type="text/javascript">
+                        window.location="index.php";
+                    </script>
 <?php 
         }
     } 

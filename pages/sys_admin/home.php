@@ -34,7 +34,7 @@
 		            </div>
 
 				
-		            <a href="index.php?page=flexocylinder">
+		            <a href="admin.php?page=customers">
 		                <div class="panel-footer">
 		                    <span class="pull-left">View Details</span>
 		                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
