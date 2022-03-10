@@ -57,6 +57,13 @@
 								<span id="check-e"></span>
 							</div>
 						</div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="form-group">
+								<label for="">Time</label>
+								<input type="text" class="form-control" placeholder="Appointment Time" name="appointment_time" id="appointment_time" />
+								<span id="check-e"></span>
+							</div>
+						</div>
 						<!--ID-->
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: none;">
 							<div class="form-group">
@@ -104,6 +111,7 @@ $(document).ready(function() {
                 var cruddata = JSON.parse(data);
                 $('#appointment_vetid').val(cruddata.sched_vetid);
                 $('#appointment_schedid').val(cruddata.sched_id);
+                $('#appointment_time').val(cruddata.appointment_time);
 				//parse json data
                 /* $("#sched_date").val(cruddata.sched_date);
                 $("#sched_starttime").val(cruddata.sched_starttime);

@@ -17,7 +17,7 @@ $col =array(
 );  //create column like table in database
 
 $sql =" SELECT * FROM schedules
-        WHERE sched_status = 'Active'
+        WHERE sched_status = 'Active' 
         ORDER BY sched_id ASC;";
 $query=mysqli_query($db,$sql);
 

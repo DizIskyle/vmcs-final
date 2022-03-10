@@ -35,15 +35,15 @@
                         </div>
                     </div> 
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <a href="login.php?page=forgot" class="forgots">Forgot your password?</a><br>
-                        <a href="login.php?page=register" class="forgots"><b><u>Don't have an Account?</u></b></a>
+                        <!-- <a href="login.php?page=forgot" class="forgots">Forgot your password?</a><br> -->
+                        <a href="login.php?page=register" class="forgots"><b><u>Create an Account</u></b></a>
                     </div> 
                 </form>
         </div>
         <div class="row">
             <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4  col-xs-offset-1 col-sm-offset-1 col-md-offset-4" style="margin-top: 15px;">
                 <p style="font-size: 9px; color: white;">*Our website supports the latest browser versions to ensure your privacy and security. To ensure access and for best viewing experience, please upgrade to the latest versions of Mozilla Firefox, Google Chrome, Safari or Internet Explorer as soon as possible</p>
-                <p style="font-size: 9px; color: white;">*Detailed instructions can be found <a href="index.php?page=instructions" class="logininfo"><b>here</b></a>.</p>
+                <!-- <p style="font-size: 9px; color: white;">*Detailed instructions can be found <a href="index.php?page=instructions" class="logininfo"><b>here</b></a>.</p> -->
             </div>
         </div>
 

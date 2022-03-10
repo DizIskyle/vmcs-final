@@ -112,7 +112,7 @@ include 'config/database.php';
                 <?php require_once $content;?>
                 <!-- Footer -->
                 <?php 
-                    include 'footer.php';
+                    // include 'footer.php';
                 ?>
                 <!-- /#Footer -->
             </div>

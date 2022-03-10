@@ -65,7 +65,7 @@
                             <ul class="nav nav-second-level">
                                 <li> <a href="admin.php?page=stocks">Item</a></li>
                                 <li>  <a href="admin.php?page=stocks-category">Stock Category</a></li>
-                                <li> <a href="admin.php?page=report">Reports</a></li>
+                                <li> <a href="admin.php?page=purchase">Reports</a></li>
                             </ul>
                         </li>  
     

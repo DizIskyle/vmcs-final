@@ -9,7 +9,7 @@ if (isset($_POST['submit_btn'])) {
 	$stock_quantity = $_POST["stock_quantity"];
 	$stock_price = $_POST["stock_price"];
 	$stock_expirationdate = $_POST["stock_expirationdate"];
-	$stock_processdate = $currentdate;
+	$stock_processdate = $currentday;
 	$stock_processby = $_SESSION['system_username'];
 	$stock_status = $_POST["stock_status"];
 
@@ -65,7 +65,7 @@ if (isset($_POST['update_btn'])) {
     $stock_quantity = $_POST["stock_quantity"];
     $stock_price = $_POST["stock_price"];
     $stock_expirationdate = $_POST["stock_expirationdate"];
-    $stock_processdate = $currentdate;
+    $stock_processdate = $currentday;
     $stock_processby = $_SESSION['system_username'];
     $stock_status = $_POST["stock_status"];
 

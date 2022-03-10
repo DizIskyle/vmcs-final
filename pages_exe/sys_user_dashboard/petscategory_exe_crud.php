@@ -52,7 +52,7 @@ if (isset($_POST['update_btn'])) {
     $petcat_processby = $_SESSION['system_username'];
     $petcat_status = $_POST["petcat_status"];
 
-    $query = "UPDATE pet_category SET petcat_name = '$petcat_name', petcat_processdate = '$petcat_processdate', petcat_processby = '$petcat_processby', petcat_status = '$petcat_status' WHERE petcat_id = '$id'";
+    $query = "UPDATE pet_category SET petcat_name = '$petcat_name', petcat_processdate = '$petcat_processdate', petcat_processby = '$petcat_processby', petcat_status = '$petcat_status' WHERE pet_catid = '$id'";
 
 	if (!$result1 = mysqli_query($db,$query)) {
         exit(mysqli_error());

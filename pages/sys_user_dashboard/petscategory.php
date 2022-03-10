@@ -53,7 +53,7 @@
 								<select name="petcat_status" id="petcat_status" class="form-control">
 									<option value="Active">Active</option>
 									<option value="Inactive">Inactive</option>
-									<option value="Deleted">Deleted</option>
+									
 								</select>
 							</div>
 						</div>
@@ -61,7 +61,7 @@
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: none;">
 							<div class="form-group">
 								<label for="">ID</label>
-								<input type="text" class="form-control" placeholder="ID" name="petcat_id" id="petcat_id" value="" />
+								<input type="text" class="form-control" placeholder="ID" name="pet_catid" id="pet_catid" value="" />
 								<span id="check-e"></span>
 							</div>
 						</div>
@@ -100,7 +100,7 @@ $(document).ready(function() {
 
         $("#petcat_name").val('');
         $("#petcat_status").val($("#petcat_status option:first").val());
-        $("#petcat_id").val('');
+        $("#pet_catid").val('');
 
         theform.resetForm();
 
@@ -165,10 +165,10 @@ $(document).ready(function() {
 				//parse json data
 				$("#petcat_name").val(cruddata.petcat_name);
 				$("#petcat_status").val(cruddata.petcat_status);
-				$("#petcat_id").val(cruddata.petcat_id);
+				$("#petc_catid").val(cruddata.pet_catid);
 
                 $("#section_btn").attr('name', 'update_btn');
-                $("#section_btn").attr('data-id', cruddata.job_id);
+                $("#section_btn").attr('data-id', cruddata.pet_catid);
                 $(".modal-title").text('Edit');
                 $("#section_btn").text('Save Changes');
                 $("#modal-id").modal("show");
